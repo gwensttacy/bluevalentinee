@@ -309,4 +309,16 @@
     
     <script src="main.js"></script>
   </body>
+    <audio id="bg-music">
+  <source src="song.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  document.addEventListener("click", function () {
+    const music = document.getElementById("bg-music");
+    music.currentTime = 0;
+    music.volume = 0.4;
+    music.play();
+  }, { once: true });
+</script>
 </html>
